@@ -1,0 +1,53 @@
+************************** pp jet samples ****************************************************
+I am using pythia and jet trees for pp from Ting:
+run15 pp200 transverse generator level的在：/gpfs01/star/pwg/tinglin/Run15/2015pp200Embedding/pythia/
+how to generate jets: /star/u/tinglin/forLiu/createPythia/
+lumi is in png file
+************************** pp jet samples ****************************************************
+
+************************** I found Bassam's directory is empty *******************
+I am using pythia dn jet trees for pAu from Bassam:
+1)
+Here is the path to the pAu200 jet trees: /gpfs01/star/pwg_tasks/spin12/for2015pAu/jetTrees 
+Please make sure you note that the spin information in these trees is not correct.
+
+2)
+Here is the macro to the jet tree maker I used to generate the jet trees: /star/u/bassam/for2015pAu/RunAndJetQA/RunJetFinder2015pro.C
+Here is a README file that could help with running the macro: /star/u/bassam/for2015pAu/RunAndJetQA/README
+Here is a directory that has codes and info about how to submit the macro to the scheduler to mass-produce jet trees: /star/u/bassam/for2015pAu/RunAndJetQA/createJetTrees
+************************** I found Bassam's directory is empty *******************
+
+************************** pAu jet samples ***************************************************
+I am using pythia and jet tree for pAu from Ting pointed me, HP request
+There is no direct pythia tree
+Trough these are embedding samples:/gpfs/mnt/gpfs01/star/pwg_tasks/spin12/for2015pAu/embeddingJetTrees/trees/
+The particle level information are pure pythia, for example, inside jets.root, antiktR060Particle branch is pure pythia
+The log file are /gpfs01/star/embed/embedding/production_pAu200_2015/, I can read cross section value here
+************************** pAu jet samples ****************************************************
+
+How to apply weight:
+pAu weight：
+weight57=4.55602e+06
+weight79=1.529e+06
+weight911=685225.0
+weight1115=204565.0
+weight1525=13212.4
+weight2535=979.543
+weight3545=339.027
+weight4555=19.4606
+weight5565=1.0
+
+pp weight
+weight23=135118.359 
+weight34=89647.078 
+weight45=23345.867 
+weight57=15129.349 
+weight79=4031.923 
+weight911=1011.038 
+weight1115=242.828
+weight1520=60.835 
+weight2025=14.601 
+weight2535=3.868 
+weight35=1.000
+
+pt range is defined from partonic pt, weight per file, for example, for pAu: st_ssdmb_adc_16159003_raw_2500040_Pythia6_pt5_7_**， for all these files, every event reweight57=4.55602e+06

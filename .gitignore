@@ -1,0 +1,24 @@
+# ROOT files
+*.root
+
+# Compiled files
+*.o
+*.so
+*.d
+
+# Executables / build
+build/
+bin/
+
+# Logs
+*.log
+*.out
+*.err
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# macOS
+.DS_Store
