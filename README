@@ -1,6 +1,6 @@
 ************************** pp jet samples ****************************************************
 I am using pythia and jet trees for pp from Ting:
-run15 pp200 transverse generator level的在：/gpfs01/star/pwg/tinglin/Run15/2015pp200Embedding/pythia/
+run15 pp200 transverse generator level: /gpfs01/star/pwg/tinglin/Run15/2015pp200Embedding/pythia/
 how to generate jets: /star/u/tinglin/forLiu/createPythia/
 lumi is in png file
 ************************** pp jet samples ****************************************************
@@ -23,6 +23,7 @@ There is no direct pythia tree
 Trough these are embedding samples:/gpfs/mnt/gpfs01/star/pwg_tasks/spin12/for2015pAu/embeddingJetTrees/trees/
 The particle level information are pure pythia, for example, inside jets.root, antiktR060Particle branch is pure pythia
 The log file are /gpfs01/star/embed/embedding/production_pAu200_2015/, I can read cross section value here
+BUT the pythia tree are pp NOT pAu, no nPDF is ever used, the Au infor was implemented through pAu data embedding, which means the pure pythia branch is pp not pAu!!
 ************************** pAu jet samples ****************************************************
 
 How to apply weight:
