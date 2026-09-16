@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job minFilesPerProcess="1" maxFilesPerProcess="1" filesPerHour="0.5" fileListSyntax="paths" simulateSubmission="false">
+  <command>
+    stardev
+
+    root4star -b -q RunPythia_Perugia2012.C\(&nevents;,&ptmin;,&ptmax;,&run;,\"&outfile;.pythia.root\"\) &gt;&amp; &outfile;.pythia.log
+
+  </command>
+
+  <SandBox> 
+    <Package>
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/RunPythia_Perugia2012.C</File> 
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/RunPythia_Perugia0.C</File>
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/RunPythia_tuneA.C</File>
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/RunJetFinderOnPythia_UE.C</File> 
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/xmlSubmit/nevents.txt</File>
+    </Package>
+  </SandBox>
+
+  <stdout URL="file:&outdir;/log/sched.&outfile;.log"/>
+  <stderr URL="file:&outdir;/log/sched.&outfile;.err"/>
+  <output fromScratch="*.log" toURL="file:&outdir;/log/" />
+  <output fromScratch="*.root" toURL="file:&outdir;/" />
+</job>

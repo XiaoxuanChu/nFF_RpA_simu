@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job minFilesPerProcess="1" maxFilesPerProcess="1" filesPerHour="1.0" fileListSyntax="paths" simulateSubmission="false">
+  <command>
+foreach pythiafile ( `awk '{ print $1 }' $FILELIST` )
+  echo $pythiafile
+  set basename=`basename $pythiafile .pythia.root`
+  echo "outputfilename" $basename
+
+  stardev
+  root4star -b -q RunJetFinderOnPythia_UE.C\(&nevents;,\"${pythiafile}\",\"$JOBID.ueoc.root\",\"$JOBID.jets.root\"\) &gt;&amp; $JOBID.jets.log
+
+  set jetfilename=${basename}.jets.root
+  set ueocfilename=${basename}.ueoc.root
+
+  mv $JOBID.jets.root ${jetfilename}
+  mv $JOBID.ueoc.root ${ueocfilename}
+end
+  </command>
+
+  <SandBox> 
+    <Package>
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/RunPythia_Perugia2012.C</File> 
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/RunPythia_Perugia0.C</File>
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/RunPythia_tuneA.C</File>
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/RunJetFinderOnPythia_UE.C</File> 
+      <File>file:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/xmlSubmit/nevents.txt</File>
+    </Package>
+  </SandBox>
+
+  <input URL="filelist:/star/u/tinglin/work/spring2015/dijetcode/simulation/createPythiaSimu/xmlSubmit/pythia_local_323_v3.list" />
+  <output fromScratch="*.log" toURL="file:&outdir;/log/" />
+  <output fromScratch="*.root" toURL="file:&outdir;/" />
+  <stdout URL="file:&outdir;/log/sched.$JOBID.log"/>
+  <stderr URL="file:&outdir;/log/sched.$JOBID.err"/>
+</job>
