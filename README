@@ -6,7 +6,7 @@ lumi is in png file
 ************************** pp jet samples ****************************************************
 
 ************************** I found Bassam's directory is empty *******************
-I am using pythia dn jet trees for pAu from Bassam:
+I was using pythia dn jet trees for pAu from Bassam:
 1)
 Here is the path to the pAu200 jet trees: /gpfs01/star/pwg_tasks/spin12/for2015pAu/jetTrees 
 Please make sure you note that the spin information in these trees is not correct.
@@ -15,6 +15,7 @@ Please make sure you note that the spin information in these trees is not correc
 Here is the macro to the jet tree maker I used to generate the jet trees: /star/u/bassam/for2015pAu/RunAndJetQA/RunJetFinder2015pro.C
 Here is a README file that could help with running the macro: /star/u/bassam/for2015pAu/RunAndJetQA/README
 Here is a directory that has codes and info about how to submit the macro to the scheduler to mass-produce jet trees: /star/u/bassam/for2015pAu/RunAndJetQA/createJetTrees
+BUT everything from Bassam is not aviliable now, I am using pAu samples from Ting.
 ************************** I found Bassam's directory is empty *******************
 
 ************************** pAu jet samples ***************************************************
@@ -26,7 +27,9 @@ The log file are /gpfs01/star/embed/embedding/production_pAu200_2015/, I can rea
 BUT the pythia tree are pp NOT pAu, no nPDF is ever used, the Au infor was implemented through pAu data embedding, which means the pure pythia branch is pp not pAu!!
 ************************** pAu jet samples ****************************************************
 
-How to apply weight:
+************************** How to apply weight **************************************************
+pt range is defined from partonic pt, weight per file, for example, for pAu: st_ssdmb_adc_16159003_raw_2500040_Pythia6_pt5_7_**， for all these files, every event reweight57=4.55602e+06
+
 pAu weight：
 weight57=4.55602e+06
 weight79=1.529e+06
@@ -50,5 +53,13 @@ weight1520=60.835
 weight2025=14.601 
 weight2535=3.868 
 weight35=1.000
+***************** How to apply weight ***********************************************************
 
-pt range is defined from partonic pt, weight per file, for example, for pAu: st_ssdmb_adc_16159003_raw_2500040_Pythia6_pt5_7_**， for all these files, every event reweight57=4.55602e+06
+****************** STAR data ********************************************************************
+1. middle rapidity nFF results from Gabirel: 
+/direct/star+u/ggarcia/Jets/0_DrawMacros/v2/figs/v5
+There you can find the .txt for each particle (pi, K, p) and jet_pT bin that will be referred to in the file name.
+Inside each file is the system (pAl or pAu), bin center, bin width, value, systematic uncertainty and statistical uncertainty.
+
+
+2. forward R_pA of pi0 results from Dener, from the txt file
