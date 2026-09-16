@@ -1,0 +1,427 @@
+Stage 2 STAR API preflight, revision 4
+ROOT=5.34/38
+STAR=/star/nfs4/AFS/star/packages/pro
+STAR_VERSION=SL24c
+DYNAMIC_PATH=/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/py-pyparsing-2.2.0-3vd7ixvgs64hryctznkracju6twbkwmm/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/python-2.7.18-fa7h6tih2lpfljynxo5quz6q6l2j4obn/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/zlib-1.2.12-xrmq2irkz5e4vbwil47ticchyunkfh6i/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/vc-0.7.4-n7shcushfymmas2lidkslpep3hj3iyxc/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/root-5.34.38-eyawaunrtayjlt3aqon5claakm3c7xl7/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/rave-2020-08-11-teyttjwrw6vc2q3v2swdwoinokbnlw63/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/python-3.8.13-myixjs7jesskpbhwiowibizezfh52rky/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/py-pyparsing-3.0.6-slw2fhcqm64fxvaiwcje4riz45fxzstn/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/mysql-5.6.43-dxccl67cjodink5q5l2qdvydds7x4ynr/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/log4cxx-0.10.0-msawkl35bwrbfg7s4sovmldrvd6msfel/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/libxml2-2.9.13-ilv6amxpikl722o5j6hfuone7q5v3oyy/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/libiconv-1.16-pbdcxjpgrdv3k3eaisme7cw5fnl7zjmh/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/kitrack-01-10-star-1-lnqacdjzhx4ho77dx6zkagserdphphrd/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/gsl-2.7.1-swjdgwdxtzkkucbcvvqvgsspflan5h2t/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/genfit-b496504a-mlcdbxg7bmdsbfrppi7qmzppfw4lh52r/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/fastjet-3.3.4-j5evuymea6juu4tkqxxim6nj3z6ldbg3/lib:.sl73_x8664_gcc485/lib:/star/nfs4/AFS/star/packages/SL24c/.sl73_x8664_gcc485/lib:/star/nfs4/AFS/star/ROOT/5.34.38/.sl73_x8664_gcc485/rootdeb/lib:/.singularity.d/libs:/star/nfs4/AFS/star/opt/star/sl73_x8664_gcc485/qt4/lib:/star/nfs4/AFS/star/opt/star/sl73_x8664_gcc485/lib:.:/star/nfs4/AFS/star/packages/SL24c/.sl73_x8664_gcc485/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/root-5.34.38-eyawaunrtayjlt3aqon5claakm3c7xl7/lib:/cvmfs/star.sdcc.bnl.gov/star-spack/spack/opt/spack/linux-rhel7-x86_64/gcc-4.8.5/root-5.34.38-eyawaunrtayjlt3aqon5claakm3c7xl7/cint/cint/stl
+LOAD StJetSkimEvent : 0
+LOAD StJets : 0
+LOAD StJetEvent : 0
+LOAD StUeEvent : 0
+
+JET tree=jet
+  entries=196
+  BRANCH name=AntiKtR060Particle class=StJetEvent title=AntiKtR060Particle
+  BRANCH name=AntiKtR060Parton class=StJetEvent title=AntiKtR060Parton
+  BRANCH name=AntiKtR050Particle class=StJetEvent title=AntiKtR050Particle
+  BRANCH name=AntiKtR050Parton class=StJetEvent title=AntiKtR050Parton
+  BRANCH name=AntiKtR060PtParticle class=StJetEvent title=AntiKtR060PtParticle
+  BRANCH name=AntiKtR060Pt2Particle class=StJetEvent title=AntiKtR060Pt2Particle
+  BRANCH name=AntiKtR060WTAParticle class=StJetEvent title=AntiKtR060WTAParticle
+  BRANCH name=AntiKtR060PtParton class=StJetEvent title=AntiKtR060PtParton
+  BRANCH name=AntiKtR060Pt2Parton class=StJetEvent title=AntiKtR060Pt2Parton
+  BRANCH name=AntiKtR060WTAParton class=StJetEvent title=AntiKtR060WTAParton
+
+UE tree=ue
+  entries=196
+  BRANCH name=AntiKtR060ParticleOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR060ParticleOffAxisConesR060
+  BRANCH name=AntiKtR060PartonOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR060PartonOffAxisConesR060
+  BRANCH name=AntiKtR050ParticleOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR050ParticleOffAxisConesR060
+  BRANCH name=AntiKtR050PartonOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR050PartonOffAxisConesR060
+  BRANCH name=AntiKtR060PtParticleOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR060PtParticleOffAxisConesR060
+  BRANCH name=AntiKtR060Pt2ParticleOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR060Pt2ParticleOffAxisConesR060
+  BRANCH name=AntiKtR060WTAParticleOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR060WTAParticleOffAxisConesR060
+  BRANCH name=AntiKtR060PtPartonOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR060PtPartonOffAxisConesR060
+  BRANCH name=AntiKtR060Pt2PartonOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR060Pt2PartonOffAxisConesR060
+  BRANCH name=AntiKtR060WTAPartonOffAxisConesR060 class=StUeOffAxisConesEvent title=AntiKtR060WTAPartonOffAxisConesR060
+  BRANCH name=AntiKtR060ParticleOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR060ParticleOffAxisConesR050
+  BRANCH name=AntiKtR060PartonOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR060PartonOffAxisConesR050
+  BRANCH name=AntiKtR050ParticleOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR050ParticleOffAxisConesR050
+  BRANCH name=AntiKtR050PartonOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR050PartonOffAxisConesR050
+  BRANCH name=AntiKtR060PtParticleOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR060PtParticleOffAxisConesR050
+  BRANCH name=AntiKtR060Pt2ParticleOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR060Pt2ParticleOffAxisConesR050
+  BRANCH name=AntiKtR060WTAParticleOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR060WTAParticleOffAxisConesR050
+  BRANCH name=AntiKtR060PtPartonOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR060PtPartonOffAxisConesR050
+  BRANCH name=AntiKtR060Pt2PartonOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR060Pt2PartonOffAxisConesR050
+  BRANCH name=AntiKtR060WTAPartonOffAxisConesR050 class=StUeOffAxisConesEvent title=AntiKtR060WTAPartonOffAxisConesR050
+
+CLASS StJetEvent
+  library=<not reported>
+  ~StJetEvent : 
+  StJetEvent : 
+  Clear : 
+  runId : 
+  eventId : 
+  dateTime : 
+  year : 
+  month : 
+  day : 
+  hour : 
+  minute : 
+  second : 
+  unixTime : 
+  numberOfVertices : 
+  numberOfJets : 
+  numberOfTracks : 
+  numberOfTowers : 
+  numberOfParticles : 
+  vertex : 
+  jet : 
+  track : 
+  tower : 
+  particle : 
+  vertices : 
+  jets : 
+  tracks : 
+  towers : 
+  particles : 
+  newVertex : 
+  newJet : 
+  newTrack : 
+  newTower : 
+  newParticle : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+  StJetEvent : 
+  operator= : 
+
+CLASS StJetCandidate
+  library=<not reported>
+  ~StJetCandidate : 
+  StJetCandidate : 
+  StJetCandidate : 
+  fourMomentum : 
+  momentum : 
+  pt : 
+  eta : 
+  phi : 
+  E : 
+  area : 
+  areaError : 
+  px : 
+  py : 
+  pz : 
+  detEta : 
+  detEta : 
+  getBarrelDetectorEta : 
+  getEndcapDetectorEta : 
+  sumTrackPt : 
+  sumTrackPt : 
+  sumTowerPt : 
+  sumTowerPt : 
+  sumPt : 
+  sumPt : 
+  profile : 
+  psi : 
+  rt : 
+  neutralFraction : 
+  chargedFraction : 
+  leadingChargedParticle : 
+  deltaPhi : 
+  deltaR : 
+  deltaR : 
+  numberOfTracks : 
+  numberOfTowers : 
+  numberOfParticles : 
+  vertex : 
+  track : 
+  tower : 
+  particle : 
+  getTrackById : 
+  getTowerById : 
+  tracks : 
+  towers : 
+  particles : 
+  getJetPatchPhi : 
+  getBarrelJetPatchEtaPhi : 
+  getEndcapJetPatchEtaPhi : 
+  getOverlapJetPatchEtaPhi : 
+  getBarrelJetPatchId : 
+  getEndcapJetPatchId : 
+  getOverlapJetPatchId : 
+  setPtEtaPhiE : 
+  setPxPyPzE : 
+  setVertex : 
+  setUeDensity : 
+  ueDensity : 
+  addTrack : 
+  addTower : 
+  addParticle : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+
+CLASS StJetParticle
+  library=<not reported>
+  ~StJetParticle : 
+  m : 
+  e : 
+  pdg : 
+  status : 
+  firstMother : 
+  lastMother : 
+  firstDaughter : 
+  lastDaughter : 
+  fourMomentum : 
+  name : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+  StJetParticle : 
+  StJetParticle : 
+  operator= : 
+
+CLASS StUeEvent
+  library=<not reported>
+  ~StUeEvent : 
+  StUeEvent : 
+  Clear : 
+  runId : 
+  eventId : 
+  leadingJetpt : 
+  numberOfVertices : 
+  numberOfTracks : 
+  numberOfTowers : 
+  numberOfParticles : 
+  vertex : 
+  track : 
+  tower : 
+  particle : 
+  vertices : 
+  tracks : 
+  towers : 
+  particles : 
+  newVertex : 
+  newTrack : 
+  newTower : 
+  newParticle : 
+  sumTrackPt : 
+  sumTowerPt : 
+  sumParticlePt : 
+  sumPt : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+  StUeEvent : 
+  operator= : 
+
+CLASS StUeOffAxisConesEvent
+  library=<not reported>
+  ~StUeOffAxisConesEvent : 
+  StUeOffAxisConesEvent : 
+  Clear : 
+  setEventId : 
+  eventId : 
+  numberOfVertices : 
+  vertices : 
+  vertex : 
+  lastVertex : 
+  newVertex : 
+  newUeOffAxisConesJet : 
+  newUeOffAxisCones : 
+  newTrack : 
+  newTower : 
+  newParticle : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+  StUeOffAxisConesEvent : 
+  operator= : 
+
+CLASS StUeOffAxisConesJetStUeEvent
+  DICTIONARY NOT AVAILABLE
+
+CLASS StUeVertex
+  library=<not reported>
+  ~StUeVertex : 
+  StUeVertex : 
+  position : 
+  ranking : 
+  setPosition : 
+  setRanking : 
+  ueJets : 
+  numberOfUeJets : 
+  ueJet : 
+  addUeJet : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+
+CLASS StUeJet
+  library=<not reported>
+  ~StUeJet : 
+  StUeJet : 
+  pt : 
+  eta : 
+  phi : 
+  e : 
+  area : 
+  setPt : 
+  setEta : 
+  setPhi : 
+  setE : 
+  setArea : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+  StUeJet : 
+  operator= : 
+
+CLASS StUeParticle
+  DICTIONARY NOT AVAILABLE
+
+CLASS StUeOffAxisConesEvent
+  library=<not reported>
+  ~StUeOffAxisConesEvent : 
+  StUeOffAxisConesEvent : 
+  Clear : 
+  setEventId : 
+  eventId : 
+  numberOfVertices : 
+  vertices : 
+  vertex : 
+  lastVertex : 
+  newVertex : 
+  newUeOffAxisConesJet : 
+  newUeOffAxisCones : 
+  newTrack : 
+  newTower : 
+  newParticle : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+  StUeOffAxisConesEvent : 
+  operator= : 
+
+CLASS StUeOffAxisConesJet
+  library=<not reported>
+  ~StUeOffAxisConesJet : 
+  StUeOffAxisConesJet : 
+  density : 
+  setDensity : 
+  numberOfCones : 
+  cone : 
+  addCone : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
+
+CLASS StUeOffAxisCones
+  library=<not reported>
+  ~StUeOffAxisCones : 
+  StUeOffAxisCones : 
+  pt : 
+  eta : 
+  phi : 
+  radius : 
+  rpho : 
+  mult : 
+  track : 
+  tower : 
+  particle : 
+  numberOfTracks : 
+  numberOfTowers : 
+  numberOfParticles : 
+  tracks : 
+  towers : 
+  particles : 
+  setPt : 
+  setEtaPhi : 
+  setRadius : 
+  setMult : 
+  addTrack : 
+  addTower : 
+  addParticle : 
+  Class : 
+  Class_Name : 
+  Class_Version : 
+  Dictionary : 
+  IsA : 
+  ShowMembers : 
+  Streamer : 
+  StreamerNVirtual : 
+  DeclFileName : 
+  ImplFileLine : 
+  ImplFileName : 
+  DeclFileLine : 
