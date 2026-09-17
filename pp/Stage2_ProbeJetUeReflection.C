@@ -138,8 +138,8 @@ void Stage2_ProbeJetUeReflection(
     return;
   }
 
-  TTree *jetTree = (TTree *)jetFile->Get("JetTree");
-  TTree *ueTree  = (TTree *)ueFile->Get("JetTree");
+  TTree *jetTree = (TTree *)jetFile->Get("jet");
+  TTree *ueTree  = (TTree *)ueFile->Get("ue");
 
   if (!jetTree || !ueTree) {
     std::cout << "ERROR: JetTree is absent in one or both files."
