@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job minFilesPerProcess="1" maxFilesPerProcess="1" filesPerHour="1.0" fileListSyntax="paths" simulateSubmission="false">
+<shell>singularity exec -e -B /direct -B /star -B /afs -B /gpfs -B /sdcc/lustre02 /cvmfs/star.sdcc.bnl.gov/containers/rhic_sl7.sif</shell>
+  <command>
+cp &codedir;/Stage2_pp_Baseline.C .
+cp &codedir;/Stage2_BatchShard.C .
+cp &codedir;/Stage2_RunShard_v4.csh .
+foreach shard ( `cat $FILELIST` )
+  set tag=`basename $shard .manifest`
+  stardev
+  csh Stage2_RunShard_v4.csh $shard $tag &gt;&amp; partial_${tag}.log
+end
+  </command>
+  <input URL="filelist:&shardlist;" />
+  <output fromScratch="partial_*.root" toURL="file:&outdir;/root/" />
+  <output fromScratch="partial_*.txt" toURL="file:&outdir;/text/" />
+  <output fromScratch="partial_*.log" toURL="file:&outdir;/log/" />
+  <stdout URL="file:&outdir;/log/sched.$JOBID.log" />
+  <stderr URL="file:&outdir;/log/sched.$JOBID.err" />
+</job>
